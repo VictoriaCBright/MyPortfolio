@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+
+/* general */
+body {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 20px;
+    margin: 19.5px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    background-image: url(Images/driftwood.jpg);
+    background-position: center;
+    height: 95vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    text-align: center;
+    padding-top: 100px;
+    /* margin-top: 70px; */
+}
+
+
+.container-fluid {
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.about, #skills, .projects {
+    background-color:rgba(120, 121, 121, 0.878);
+    border-radius: 20px;
+    border: 3px solid black;
+    
+ }
+
+
+
+/* HEADER */
+header {
+    background-color: rgba(120, 121, 121, 0.527);   
+    padding-bottom: 3px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+h1 {
+    font-size: 90px;
+    color: white;
+    font-weight: 700;
+}
+
+h1:hover {
+    font-style:italic;
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    font-size: 60px;
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px black;
+}
+
+span {
+    font-style: italic;
+}
+
+span:hover {
+    color: black;
+}
+
+.header > h3 {
+    font-size: 45px;
+    color: rgb(247, 245, 245);
+    font-weight: 700;
+}
+
+ 
+
+/* NAV */
+#navbar {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar li, #navbar a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: rgb(117, 148, 159);
+    text-decoration:overline;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+/* About */
+
+#photo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.871), rgba(128, 128, 128, 0.835));
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 70%;
+}
+
+img {
+    width: auto;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.about h2 {
+    font-size: 60px;
+}
+
+.about {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+
+/* Skills */
+
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    font-size: 60px;
+    text-shadow: 2px 2px black;
+}
+#skills {
+    margin: 10px;
+    padding: 15px;
+}
+
+ .col {
+    color: black;
+    font-size: 60px;
+    text-shadow: 1px 1px rgb(176, 171, 171);
+}
+
+h4 {
+    color: white;
+    text-decoration: bold;
+    text-align: center;
+}
+
+#skills li {
+   list-style: none;
+   text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-size: 40px
+}
+
+/* Projects */
+
+.projects {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    overflow: hidden;
+}
+#projectGrid > .showcase {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+    align-self: center;
+    overflow: hidden;
+}
+
+#showcase a {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+#photosite > img {
+    height: 100px;
+    width: 150px;
+}
+#photosite, #videoBG, #textAdventure, #terry {
+    margin: auto;
+    padding: 10px;
+  
+}
+
+#videoBG > img {
+    height: 100px;
+    width: 150px;
+}
+
+#textAdventure > img {
+    height: 100px;
+    width: 150px;
+}
+
+#terry > img {
+    height: 100px;
+    width: 150px;
+}
+
+
+/* FOOTER */
+
+footer {
+    color: white;
+    font-weight: 700;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 794px) {
+    header > .container-fluid,
+    .about > .container-fluid,
+    .skills > .container.fluid, 
+     #projectGrid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px;
+    }
+}
+
+@media (orientation:portrait) {
+    .container-fluid {
+        margin-top: 50px;
+        padding: auto;
+    }
+}
+@media (orientation:portrait) {
+    #navbar li, #navbar a {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
